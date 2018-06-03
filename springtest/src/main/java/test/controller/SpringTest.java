@@ -20,7 +20,7 @@ public class SpringTest {
 	@RequestMapping(value="/stringTest", method=RequestMethod.GET)
 	private @ResponseBody String stringTest() {
 		 
-		return "string hello1111";
+		return "string hello1111222";
 	}
 	
 	@RequestMapping(value="/responseEntity", method=RequestMethod.GET)
