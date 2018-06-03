@@ -5,6 +5,11 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
   
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:spring/config/*-context.xml</param-value>
+    </context-param>  
+  
     <servlet>
         <servlet-name>dispatcher</servlet-name>
         <servlet-class>
@@ -12,8 +17,8 @@
         </servlet-class>
         
         <init-param> 
-        	<param-name>contextConfigLocation</param-name> 
-        	<param-value>/WEB-INF/servlet-context.xml</param-value> 
+        	<param-name>contextConfigLocation</param-name>  
+        	<param-value>classpath:spring/config/servlet-*.xml</param-value>
         </init-param>
 
         <load-on-startup>1</load-on-startup>
@@ -23,9 +28,6 @@
     	<servlet-name>dispatcher</servlet-name>
     	<url-pattern>/</url-pattern>
    	</servlet-mapping>
-   	
-  <!--  	<context-param>
-   		<param-name></param-name>
-   		<param-value></param-value>
-   	</context-param> -->
+
+
 </web-app>
