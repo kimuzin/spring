@@ -18,7 +18,7 @@ public class SpringTest {
 
 	@RequestMapping(value="/stringTest", method=RequestMethod.GET)
 	private @ResponseBody String stringTest() {
-		 
+		// feat test1
 		return "string hello111122332";
 	}
 	
@@ -26,14 +26,14 @@ public class SpringTest {
 	private ResponseEntity<SpringVO> responseEntity(){
 		SpringVO springvo = new SpringVO();
 		springvo.setName1("test111");
-		springvo.setName2("test2222");
+		springvo.setName2("test222554");
 		return new ResponseEntity<SpringVO>(springvo, HttpStatus.OK);
 		
 	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("main");
+		System.out.println("ma22in");
 	}
 
 }
